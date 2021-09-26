@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"
+      integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.0.1/react-router-dom.min.js"></script>
+    <script
+      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/7.2.5/react-redux.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-thunk/2.3.0/redux-thunk.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="mocha"></div>
+    <script src="scripts/globals.js"></script>
+
+    <script src="scripts/types.js"></script>
+    <script src="scripts/services/actions.js"></script>
+    <!-- Reducers information -->
+
+    <script src="scripts/reducers/auth.reducer.js"></script>
+    <script src="scripts/reducers/note.reducer.js"></script>
+    <script src="scripts/reducers/sidebar.reducer.js"></script>
+    <script src="scripts/store.js"></script>
+
+    <!-- Components Start -->
+
+    <!-- Auth -->
+    <script type="text/babel" src="scripts/components/auth/Auth.js"></script>
+
+    <!-- CRUD -->
+    <script
+      type="text/babel"
+      src="scripts/components/notes/NoteForm.js"
+    ></script>
+    <script
+      type="text/babel"
+      src="scripts/components/notes/NoteItem.js"
+    ></script>
+    <script
+      type="text/babel"
+      src="scripts/components/notes/NoteTable.js"
+    ></script>
+
+    <!-- Components End -->
+
+    <!-- views start -->
+    <script type="text/babel" src="scripts/views/Auth.js"></script>
+    <script type="text/babel" src="scripts/views/Notes.js"></script>
+    <!-- views end -->
+
+    <!-- Index and App files -->
+    <script type="text/babel" src="scripts/index.js"></script>
+    <script type="text/babel" src="scripts/app.js"></script>
+
+    <!-- testing -->
+
+    <!-- <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup("bdd");
+    </script>
+    <script src="scripts/test.spec.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script> -->
+  </body>
+</html>

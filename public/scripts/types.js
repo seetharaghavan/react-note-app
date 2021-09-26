@@ -1,0 +1,20 @@
+const REQUEST_LOG_IN = "REQUEST_LOG_IN"; 
+const LOG_IN = "LOG_IN"; 
+const LOG_OUT = "LOG_OUT"; 
+const LOG_IN_FAILED = "LOG_IN_FAILED"; 
+
+const ADD_NOTE = "ADD_NOTE";
+const EDIT_NOTE = "EDIT_NOTE"; 
+const REMOVE_NOTE = "REMOVE_NOTE";
+
+const GET_NOTES = "GET_NOTES"; 
+const SELECT_NOTE = 'SELECT_NOTE'; 
+const ERROR_NOTE = 'ERROR_NOTE'; 
+
+const NOTE_REQUEST = "NOTE_REQUEST"; 
+
+const SIDEBAR_TOGGLE = 'SIDEBAR_TOGGLE'; 
+
+const NOTE_FORM_RESET = "NOTE_FORM_RESET"; 
+
+const BASE_URL = ""; 
